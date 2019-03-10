@@ -223,4 +223,8 @@ public class Utils {
         return assignable == null || assignable.equalsIgnoreCase("[]") || assignable.equals("null") ?
                 Constant.EMPTY_STRING : assignable;
     }
+
+    public static int textSize(EditText editText){
+        return Utils.get(editText).length();
+    }
 }

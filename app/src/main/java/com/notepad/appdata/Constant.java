@@ -4,6 +4,7 @@ import com.notepad.R;
 
 public interface Constant {
     String EMPTY_STRING = "";
+    int TITLE_AUTO_MAX_LENGTH=30;
 
     enum HomeNavigation {
         REMINDER(0, R.id.action_reminders, R.string.reminders),

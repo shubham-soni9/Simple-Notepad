@@ -29,7 +29,6 @@ public class LinedEditText extends AppCompatEditText {
     @Override
     protected void onDraw(Canvas canvas) {
         int height = getHeight();
-        Log.e("LinedText", "Height :: " + height);
         int line_height = getLineHeight();
         int count = height / line_height;
         if (getLineCount() > count) {

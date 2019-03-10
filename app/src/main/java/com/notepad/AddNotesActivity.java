@@ -68,6 +68,7 @@ public class AddNotesActivity extends BaseActivity implements View.OnClickListen
     private       List<Hashtag>       tagsList;
     private       TextWatcher         noteTextWatcher;
     private       TextView            tvLastEditedDate;
+    private       boolean             isTitleFocused      = false;
 
 
     @Override
@@ -79,7 +80,7 @@ public class AddNotesActivity extends BaseActivity implements View.OnClickListen
         setImageAdapter();
         setTagAdapter();
         etAddNote.requestFocus();
-        etAddNote.setSelection(etAddNote.getText().length());
+        etAddNote.setSelection(Utils.textSize(etAddNote));
     }
 
     private void setTitleListener() {
@@ -92,7 +93,9 @@ public class AddNotesActivity extends BaseActivity implements View.OnClickListen
 
                 @Override
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    etTitle.setText(s);
+                    if (Utils.get(etAddNote).length() < Constant.TITLE_AUTO_MAX_LENGTH && !isTitleFocused) {
+                        etTitle.setText(s);
+                    }
                 }
 
                 @Override
@@ -102,10 +105,11 @@ public class AddNotesActivity extends BaseActivity implements View.OnClickListen
             };
             etAddNote.addTextChangedListener(noteTextWatcher);
         }
-        etTitle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
+        etTitle.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) {
+                Log.e(TAG, "On Title Focused");
+                isTitleFocused = true;
             }
         });
     }
@@ -151,24 +155,30 @@ public class AddNotesActivity extends BaseActivity implements View.OnClickListen
         } else {
             currentNote = new Note();
             imageList = new ArrayList<>();
-            tvLastEditedDate.setText(getString(R.string.edited) + " " + DateUtils.getInstance().getFormattedDate(new Date(), Constant.DateFormat.LAST_EDITED_TIME_FORMAT));
+            tvLastEditedDate.setText(String.format("%s %s", getString(R.string.edited)
+                    , DateUtils.getInstance().getFormattedDate(new Date()
+                            , Constant.DateFormat.LAST_EDITED_TIME_FORMAT)));
+
             setTitleListener();
         }
     }
 
-    private void onNoteDataFetched(Note note) {
-        this.currentNote = note;
-        if (note != null) {
-            etTitle.setText(note.getTitle());
-            etAddNote.setText(Utils.assign(note.getTextData()));
-            etAddNote.setSelection(Utils.assign(note.getTextData()).length());
-            if (note.getNoteColor() != 0) {
-                rlDataParent.setBackgroundColor(note.getNoteColor());
+    private void onNoteDataFetched(Note currentNote) {
+        this.currentNote = currentNote;
+        if (currentNote != null) {
+            isTitleFocused=true;
+            etTitle.setText(currentNote.getTitle());
+            etAddNote.setText(Utils.assign(currentNote.getTextData()));
+            etAddNote.setSelection(Utils.assign(currentNote.getTextData()).length());
+            if (currentNote.getNoteColor() != 0) {
+                rlDataParent.setBackgroundColor(currentNote.getNoteColor());
             }
-            imageList = note.getImageList();
+            imageList = currentNote.getImageList();
             setImageAdapter();
             setTitleListener();
-            tvLastEditedDate.setText(getString(R.string.edited) + " " + DateUtils.getInstance().getFormattedDate(note.getLastUpdatedTime(), Constant.DateFormat.LAST_EDITED_TIME_FORMAT));
+            tvLastEditedDate.setText(String.format("%s %s", getString(R.string.edited)
+                    , DateUtils.getInstance().getFormattedDate(currentNote.getLastUpdatedTime()
+                            , Constant.DateFormat.LAST_EDITED_TIME_FORMAT)));
         }
     }
 
