@@ -102,6 +102,12 @@ public class AddNotesActivity extends BaseActivity implements View.OnClickListen
             };
             etAddNote.addTextChangedListener(noteTextWatcher);
         }
+        etTitle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     private void setImageAdapter() {
