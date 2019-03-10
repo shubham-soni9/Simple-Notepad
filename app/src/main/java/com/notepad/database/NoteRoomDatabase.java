@@ -8,7 +8,7 @@ import android.content.Context;
 
 @TypeConverters({NoteListTypeConverter.class})
 @Database(entities = {Note.class, Hashtag.class}, version = 1)
-public abstract -class NoteRoomDatabase extends RoomDatabase {
+public abstract class NoteRoomDatabase extends RoomDatabase {
     private static volatile NoteRoomDatabase INSTANCE;
 
     static NoteRoomDatabase getDatabase(final Context context) {
