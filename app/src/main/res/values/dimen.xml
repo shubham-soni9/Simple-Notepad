@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="spacing_3">3dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_14">14dp</dimen>
+    <dimen name="spacing_15">15dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_18">18dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_22">22dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_26">26dp</dimen>
+    <dimen name="spacing_28">28dp</dimen>
+    <dimen name="spacing_30">30dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_34">34dp</dimen>
+    <dimen name="spacing_36">36dp</dimen>
+    <dimen name="spacing_38">38dp</dimen>
+    <dimen name="spacing_40">40dp</dimen>
+    <dimen name="spacing_50">50dp</dimen>
+
+    <dimen name="height_3">3dp</dimen>
+    <dimen name="height_5">5dp</dimen>
+    <dimen name="height_8">8dp</dimen>
+    <dimen name="height_10">10dp</dimen>
+    <dimen name="height_12">12dp</dimen>
+    <dimen name="height_14">14dp</dimen>
+    <dimen name="height_15">15dp</dimen>
+    <dimen name="height_16">16dp</dimen>
+    <dimen name="height_18">18dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="height_22">22dp</dimen>
+    <dimen name="height_24">24dp</dimen>
+    <dimen name="height_26">26dp</dimen>
+    <dimen name="height_28">28dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_32">32dp</dimen>
+    <dimen name="height_34">34dp</dimen>
+    <dimen name="height_36">36dp</dimen>
+    <dimen name="height_38">38dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+
+    <dimen name="font_8">8sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_11">11sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_17">17sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_19">19sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_21">21sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_23">23sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_25">25sp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">11sp</dimen>
+
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="action_button_height">32dp</dimen>
+    <dimen name="action_button_text_size">14sp</dimen>
+    <dimen name="action_button_min_width">56dp</dimen>
+    <dimen name="action_button_padding_horizontal">4dp</dimen>
+
+    <string name="colorpicker_dialog_title">Choose the color</string>
+    <string name="colorpicker_dialog_cancel">Cancel</string>
+    <string name="colorpicker_dialog_ok">OK</string>
+
+
+    <dimen name="text_size_tiny">9sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_title_big">34sp</dimen>
+    <dimen name="text_size_xxx">46sp</dimen>
+    <dimen name="text_size_xl">24sp</dimen>
+    <dimen name="text_size_intermediate">13sp</dimen>
+
+
+    <dimen name="spacing_huge">60dp</dimen>
+    <dimen name="spacing_xlarge">40dp</dimen>
+    <dimen name="spacing_very_large">30dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_medium">20dp</dimen>
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_xsmall">8dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_very_tiny">2dp</dimen>
+    <dimen name="spacing_normal_17">17dp</dimen>
+
+
+    <dimen name="font_xxxlarge">30sp</dimen>
+    <dimen name="font_xxlarge">24sp</dimen>
+    <dimen name="font_xlarge">20sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_xsmall">10sp</dimen>
+    <dimen name="font_normal_15">15sp</dimen>
+    <dimen name="font_6">6sp</dimen>
+    <dimen name="font_4">4sp</dimen>
+    <dimen name="dialog_corner_radius">3dp</dimen>
+
+
+    <dimen name="view_height_tall">60dp</dimen>
+    <dimen name="view_height_normal">40dp</dimen>
+    <dimen name="view_height_short">35dp</dimen>
+    <dimen name="view_height_shorter">30dp</dimen>
+    <dimen name="view_height_small">24dp</dimen>
+    <dimen name="view_height_xsmall">14dp</dimen>
+    <dimen name="view_height_xxsmall">10dp</dimen>
+    <dimen name="view_height_tiny">8dp</dimen>
+    <dimen name="view_height_very_tiny">3dp</dimen>
+
+    <dimen name="button_corner_radius">5dp</dimen>
+
+</resources>

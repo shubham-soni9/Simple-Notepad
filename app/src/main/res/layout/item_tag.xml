@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/spacing_5"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/spacing_50">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    android:layout_gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/spacing_5">
+
+    <TextView
+        android:id="@+id/tvTagTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvNoteCount"
+        android:gravity="center_vertical"
+        android:text="#Shopping"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:paddingEnd="@dimen/spacing_5"
+        android:textColor="@color/text_bold_color"
+        android:textStyle="normal"
+        android:paddingStart="@dimen/spacing_5"
+        android:paddingLeft="@dimen/spacing_5"
+        android:layout_toLeftOf="@+id/tvNoteCount"
+        android:textSize="@dimen/font_18"
+        android:layout_alignBottom="@+id/tvNoteCount"
+        android:layout_toStartOf="@+id/tvNoteCount"
+        android:paddingRight="@dimen/spacing_5"
+        android:layout_marginStart="@dimen/spacing_10" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvNoteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/oval_background"
+        android:gravity="center"
+        android:minWidth="35dp"
+        android:layout_toLeftOf="@+id/ivRightArrow"
+        android:minHeight="35dp"
+        android:textAppearance="@style/CustomTextAppearance.Light"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/font_18"
+        android:text="0"
+        android:layout_toStartOf="@+id/ivRightArrow" />
+
+    <ImageView
+        android:id="@+id/ivRightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:tint="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout></android.support.v7.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/llTagSheet"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:behavior_hideable="true">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTagList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

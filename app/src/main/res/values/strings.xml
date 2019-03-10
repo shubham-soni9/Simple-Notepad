@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">NotePad</string>
+    <string name="all_notes">All Notes</string>
+    <string name="favorites">Favorites</string>
+    <string name="reminders">Reminders</string>
+    <string name="tags">Tags</string>
+    <string name="trash">Trash</string>
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="alarm">Alarm</string>
+    <string name="calendar">Calendar</string>
+    <string name="title">Title</string>
+    <string name="pick_image_from">Pick image from</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="no_gallery">Gallery not found in this phone.</string>
+
+    <string name="camera_feature_unavailable">Camera feature unavailable!</string>
+    <string name="please_grant_permission_to_access_camera">Please grant permission to access Camera</string>
+    <string name="please_grant_permission_to_storage">Please grant permission to Storage</string>
+    <string name="could_not_read_from_source_text">Could not read from source</string>
+    <string name="problem_in_fetching_image">Problem in fetching image&#8230;</string>
+    <string name="loading_text">Loading&#8230;</string>
+    <string name="internet_connectivity_issue_text">No internet connection. Please try again later.</string>
+    <string name="select_tag">Select Tag</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="submit_text">Submit</string>
+    <string name="field_cannot_be_left_blank">Field cannot be left blank</string>
+    <string name="ok_text">OK</string>
+    <string name="add_text_here_text">Add text here…</string>
+    <string name="empty" translatable="false"></string>
+    <string name="submit">Submit</string>
+    <string name="enter_tag">Enter Tag Name</string>
+    <string name="discard_text">Discard</string>
+    <string name="save">Save</string>
+    <string name="enter_tag_here">Enter tag here...</string>
+    <string name="edited">Edited</string>
 </resources>

@@ -1,11 +1,80 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+    </style>
+
+    <!--Custom text appearances-->
+    <style name="CustomTextAppearance.SemiBold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/font_semibold</item>
+    </style> <!--Custom text appearances-->
+    <style name="CustomTextAppearance.Bold" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/font_bold</item>
+    </style> <!--Custom text appearances-->
+
+
+    <style name="CustomTextAppearance.Light" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/font_light</item>
+    </style>
+
+    <style name="CustomTextAppearance.Medium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/font_medium</item>
+    </style>
+
+    <style name="CustomTextAppearance.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/font_regular</item>
+    </style>
+
+    <style name="CustomTextAppearance.UltraLight" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/font_ultralight</item>
+    </style>
+
+    <style name="home_side_menu_item_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/spacing_12</item>
+    </style>
+
+    <style name="home_side_menu_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:layout_marginStart">@dimen/spacing_10</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/CustomTextAppearance.SemiBold</item>
+    </style>
+
+    <style name="home_side_menu_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+    </style>
+
+    <!-- Dialog  application theme. -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="CustomDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
     </style>
 
 </resources>
